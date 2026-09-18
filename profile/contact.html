@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系方式 · 潘宇航</title>
+<meta name="description" content="联系潘宇航">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="主导航">
+    <a class="nav-logo" href="index.html">潘宇航<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-list" id="navList">
+      <li><a class="nav-link" href="index.html">首页</a></li>
+      <li><a class="nav-link" href="education.html">教育经历</a></li>
+      <li><a class="nav-link" href="experience.html">实践经历</a></li>
+      <li><a class="nav-link" href="skills.html">技能证书</a></li>
+      <li><a class="nav-link" href="projects.html">项目作品</a></li>
+      <li><a class="nav-link active" href="contact.html">联系方式</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <p class="breadcrumb">首页 &gt;&gt; <b>联系方式</b></p>
+
+    <div class="doctor-layout">
+
+      <!-- 左侧个人档案栏 -->
+      <aside class="profile-card reveal">
+        <div class="pc-top">
+          <div class="pc-photo"><img src="photo.jpg" alt="潘宇航一寸证件照"></div>
+          <div class="pc-head">
+            <h2 class="pc-name">潘宇航</h2>
+            <p class="pc-school">中南民族大学 · 金融学</p>
+            <p class="pc-swap">华中科技大学 · 交换学习一年</p>
+          </div>
+        </div>
+
+        <div class="pc-specialty">
+          <h3>专长介绍</h3>
+          <p>我对银行业与证券业有明确的职业兴趣，正在系统学习金融专业知识与市场分析方法；熟练掌握 Excel，能够高效完成数据处理与图表分析，并正在学习 Python 与 SQL 以拓展数据分析能力。此前在通讯企业担任业务员的经历，让我具备了扎实的客户沟通与服务意识，懂得倾听需求、解决问题，这些能力也为未来的金融服务工作打下了基础。</p>
+        </div>
+
+        <div class="pc-contact">
+          <h3>联系我</h3>
+          <p>邮箱：478873851@qq.com</p>
+          <p>电话：17387192337</p>
+        </div>
+      </aside>
+
+      <!-- 右侧内容区 -->
+      <section class="content-main">
+
+        <div class="page-head reveal">
+          <p class="section-tag">05 · CONTACT</p>
+          <h1>联系方式</h1>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p style="color:var(--text-light);margin-bottom:22px;">欢迎交流金融、学习与成长的话题，期待与你认识。</p>
+            <a class="contact-item" href="mailto:478873851@qq.com">
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <span><span class="info-label" style="font-size:12px;color:var(--text-light);letter-spacing:.1em;">邮箱</span><br>478873851@qq.com</span>
+            </a>
+            <a class="contact-item" href="tel:17387192337">
+              <span class="contact-icon" aria-hidden="true">电话</span>
+              <span><span class="info-label" style="font-size:12px;color:var(--text-light);letter-spacing:.1em;">电话</span><br>17387192337</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fName">姓名</label>
+                <input type="text" id="fName" name="name" placeholder="你的称呼" required>
+                <p class="form-error" id="errName"></p>
+              </div>
+              <div class="form-field">
+                <label for="fEmail">邮箱</label>
+                <input type="email" id="fEmail" name="email" placeholder="you@example.com" required>
+                <p class="form-error" id="errEmail"></p>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fMsg">留言</label>
+              <textarea id="fMsg" name="message" rows="5" placeholder="想说的话……" required></textarea>
+              <p class="form-error" id="errMsg"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">发送留言</button>
+            <div class="form-success" id="formSuccess"></div>
+          </form>
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 潘宇航 · 持续更新中</p>
+    <a class="footer-top" href="#">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<audio id="bgm" src="music.wav" loop preload="none"></audio>
+<button class="music-btn" id="musicBtn" aria-label="播放背景音乐">♪</button>
+
+<script src="script.js"></script>
+</body>
+</html>
