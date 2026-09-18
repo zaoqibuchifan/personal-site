@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>潘宇航 · 个人网站</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(170deg, #e6f2ff 0%, #f4f9ff 50%, #e8f4ec 100%);
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; width: 100%; flex: 1; }
+
+header { text-align: center; margin-bottom: 34px; animation: fadeIn .8s ease both; }
+header h1 { font-size: 32px; color: #1f5f96; letter-spacing: 2px; }
+header .sub { margin-top: 10px; color: #5b7a96; font-size: 15px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.card {
+  background: #fff; border-radius: 18px; padding: 28px 26px;
+  border: 1px solid #d6e6f5; box-shadow: 0 8px 26px rgba(41, 121, 184, 0.10);
+  display: flex; flex-direction: column;
+  transition: transform .2s, box-shadow .25s;
+  animation: fadeIn .8s ease both;
+}
+.card:nth-child(2) { animation-delay: .12s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(41, 121, 184, 0.16); }
+.card .icon { margin-bottom: 12px; }
+.card .icon svg { width: 42px; height: 42px; stroke: #2979b8; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.card.green .icon svg { stroke: #4caf7d; }
+.card h2 { font-size: 20px; color: #1f5f96; margin-bottom: 10px; }
+.card p { font-size: 14px; color: #5b6b7a; line-height: 1.7; flex: 1; }
+.card .tags { margin: 14px 0 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.card .tags span {
+  font-size: 12px; color: #2979b8; background: #e6f2ff;
+  border-radius: 999px; padding: 4px 12px;
+}
+.btn {
+  display: inline-block; text-align: center; text-decoration: none;
+  background: #2979b8; color: #fff; border-radius: 999px;
+  padding: 12px 18px; font-size: 15px; letter-spacing: 1px;
+  transition: background .2s, transform .15s;
+}
+.btn:hover { background: #1f659b; }
+.btn:active { transform: scale(.97); }
+.btn.green { background: #4caf7d; }
+.btn.green:hover { background: #3d9a6b; }
+
+.tips {
+  margin-top: 34px; background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #d6e6f5; border-radius: 14px; padding: 18px 22px;
+  font-size: 13px; color: #5b6b7a; line-height: 1.9;
+  animation: fadeIn .8s ease both; animation-delay: .24s;
+}
+.tips b { color: #2979b8; }
+footer { text-align: center; padding: 22px; font-size: 13px; color: #7b93a8; }
+
+@media (max-width: 640px) {
+  .cards { grid-template-columns: 1fr; }
+  .wrap { padding: 26px 16px 40px; }
+  header h1 { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>潘宇航 · 个人网站</h1>
+    <p class="sub">中南民族大学 · 金融学 · 个人简介与四级词汇消消乐</p>
+  </header>
+
+  <div class="cards">
+    <a class="card" href="profile/index.html">
+      <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></div>
+      <h2>个人简介</h2>
+      <p>我的教育经历、实习实践、技能证书、项目作品与联系方式，六个页面完整呈现。</p>
+      <div class="tags">
+        <span>教育经历</span><span>实践经历</span><span>技能证书</span><span>项目作品</span><span>联系方式</span>
+      </div>
+      <span class="btn">进入个人主页</span>
+    </a>
+
+    <a class="card green" href="game/四级词汇消消乐.html">
+      <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2.5"/><path d="M6 11h.01M9 11h.01M12 11h.01M15 11h.01M18 11h.01"/></svg></div>
+      <h2>四级词汇消消乐</h2>
+      <p>内置 4428 个大学英语四级单词，倒计时配对消除，边玩边记单词。</p>
+      <div class="tags">
+        <span>单词配对</span><span>倒计时挑战</span><span>计分系统</span><span>自定义词表</span>
+      </div>
+      <span class="btn green">开始游戏</span>
+    </a>
+  </div>
+
+  <div class="tips">
+    <b>打开方式：</b>电脑双击本目录下的 <b>index.html</b> 即可用浏览器打开；手机请将整个文件夹发送到手机（微信文件传输 / 数据线），再用手机浏览器打开 index.html 即可浏览与游玩。<br>
+    <b>说明：</b>个人简介含 6 个独立页面，共享统一样式与背景音乐；游戏为单文件页面，支持上传自定义词表（xlsx 解析需联网，CSV 离线可用）。
+  </div>
+</div>
+
+<footer>© 2026 潘宇航 · 中南民族大学金融学</footer>
+</body>
+</html>
